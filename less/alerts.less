@@ -2,7 +2,6 @@
 // Alerts
 // --------------------------------------------------
 
-
 // Base styles
 // -------------------------
 
@@ -11,6 +10,7 @@
   margin-bottom: @line-height-computed;
   border: 1px solid transparent;
   border-radius: @alert-border-radius;
+  font-size: 16px;
 
   // Headings for larger alerts
   h4 {
@@ -25,7 +25,7 @@
   }
 
   // Improve alignment and spacing of inner content
-  > p,
+   > p,
   > ul {
     margin-bottom: 0;
   }
@@ -38,8 +38,8 @@
 // Dismissible alerts
 //
 // Expand the right padding and account for the close button's positioning.
+.alert-dismissable,// The misspelled .alert-dismissable was deprecated in 3.2.0.
 
-.alert-dismissable, // The misspelled .alert-dismissable was deprecated in 3.2.0.
 .alert-dismissible {
   padding-right: (@alert-padding + 20);
 
