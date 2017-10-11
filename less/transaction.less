@@ -1,0 +1,86 @@
+//
+// Transaction
+// --------------------------------------------------
+
+// Base styles
+// -------------------------------------------------
+
+.transactions {
+
+  .transaction{
+    padding: 25px 15px;
+    border-top: 0.5px solid rgba(151,151,151,0.15);
+    border-bottom: 0.5px solid rgba(151,151,151,0.15);
+    margin: 0;
+    div { padding: 0;}
+    .icon{
+      font-size: 6rem;
+      height: 100%;
+      width: auto;
+      color: @gray;
+      border-color: #fff;
+    }
+    .transaction-detail{
+      padding: 0 0 0 10px;
+      color: @gray;
+      p{ margin: 0;}
+      .transaction-title{
+        font-size: 1.7rem;
+        font-weight: 700;
+        color: @gray-base;
+        text-transform: uppercase;
+      }
+      .transaction-sender{
+        font-size: 1.25rem;
+        a{
+          color: @gray;
+          text-decoration: underline;
+        }
+      }
+      .transaction-timestamp{
+        font-size: 1.2rem;
+        opacity: 0.74;
+      }
+    }
+    .transaction-amount{
+      text-align: right;
+      color: @gray;
+      p { margin: 0;}
+      .amount-expense,
+      .amount-income{
+        font-size: 1.7rem;
+        font-weight: 700;
+      }
+      .amount-expense{
+        color: @brand-danger;
+      }
+      .amount-income{
+        color: @brand-primary;
+      }
+    }
+  }
+}
+
+// Alternate Transaction
+// --------------------------------------------------
+
+.heading-primary {
+  .heading-variant(@brand-primary;);
+}
+// Info appears as blue-green
+.heading-info {
+  .heading-variant(@brand-info;);
+}
+// Warning appears as orange
+.heading-warning {
+  .heading-variant(@brand-warning;);
+}
+// Danger and error appear as red
+.heading-danger {
+  .heading-variant(@brand-danger;);
+}
+
+// Heading with Gray Color
+.heading-neutral {
+  .heading-variant(@brand-neutral;);
+}

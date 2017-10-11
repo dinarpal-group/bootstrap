@@ -1,0 +1,41 @@
+//
+// Heading
+// --------------------------------------------------
+
+// Base styles
+// -------------------------------------------------
+
+.heading {
+  background: @gray-base;
+  text-align: center; 
+  padding: 40px 0 30px;
+  margin: 0px 0px 0px;
+  box-shadow: inset 0px -1px 4px  rgba(0,0,0,0.11);
+  h1,h3 { color: #fff; }
+  h1 { text-transform: uppercase; letter-spacing: 2px; margin: 0; line-height: 1;}
+  h3 { font-weight: 400; margin: 0; letter-spacing: 1px; font-size: 14px; line-height: 0.8;}
+}
+
+// Alternate Heading
+// --------------------------------------------------
+
+.heading-primary {
+  .heading-variant(@brand-primary;);
+}
+// Info appears as blue-green
+.heading-info {
+  .heading-variant(@brand-info;);
+}
+// Warning appears as orange
+.heading-warning {
+  .heading-variant(@brand-warning;);
+}
+// Danger and error appear as red
+.heading-danger {
+  .heading-variant(@brand-danger;);
+}
+
+// Heading with Gray Color
+.heading-neutral {
+  .heading-variant(@brand-neutral;);
+}

@@ -2,21 +2,25 @@
 // Variables
 // --------------------------------------------------
 
+
 //== Colors
 //
 //## Gray and brand colors for use across Bootstrap.
 @gray-base: #303030;
 @gray-darker: lighten(@gray-base, 13.5%); // #525252
-@gray-dark: lighten(@gray-base, 20%); // #636363
+@gray-dark: #303030;
 @gray: lighten(@gray-base, 33.5%); // #858585
 @gray-light: lighten(@gray-base, 46.7%); // #a7a7a7
 @gray-lighter: lighten(@gray-base, 93.5%); // #fff
-@brand-primary: darken(#09B0A5, 6.5%); // #337ab7
-@brand-success: #5cb85c;
+@white : #ffffff;
+@gray : #64686D;
+@brand-primary: #09B0A6; // #337ab7
+@brand-success: #35bb78;
 @brand-info: #60A9EA;
-@brand-warning: #FEB800;
+@brand-warning: #F9B500;
 @brand-danger: #ED6868;
-@brand-gold: #FFAB00;
+@brand-neutral: #C0C0C0;
+@brand-gold: @brand-warning;
 
 //== Scaffolding
 //
@@ -59,7 +63,7 @@
 
 //** By default, this inherits from the `<body>`.
 @headings-font-family: inherit;
-@headings-font-weight: 500;
+@headings-font-weight: 600;
 @headings-line-height: 1.1;
 @headings-color: @gray-base;
 
@@ -124,7 +128,7 @@
 //== Buttons
 //
 //## For each of Bootstrap's buttons, define text, background and border color.
-@btn-font-weight: normal;
+@btn-font-weight: 700;
 @btn-default-color: #333;
 @btn-default-bg: #fff;
 @btn-default-border: #333;
