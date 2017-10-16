@@ -1,0 +1,17 @@
+body{
+	padding: 0 0 100px 0;
+}
+
+.palette div{
+	height: 200px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.palette h3{
+	color: #ffffff;
+}
+
+.typography h3{
+	font-size: 8rem;
+}

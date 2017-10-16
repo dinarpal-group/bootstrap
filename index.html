@@ -8,6 +8,7 @@
     <title>Dinarpal Styleguide</title>
 <!--     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->  
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/styleguide.css">
   </head>
   <body>
     <div class="container">
@@ -19,40 +20,41 @@
       <div class="page-header">
         <h2>Palette</h2>
       </div>
-      <div class="row">
-          <div class="col-xs-6 col-sm-3 img-thumbnail">
-              <img src="holder.js/512x256?bg=16A085&text=#16A085" class="img-responsive" alt="#16A085 palette image tile">
-              <h3 class="text-center">#16A085</h3>
+      <div class="row palette">
+          <div class="col-xs-6 col-sm-3" style="background: #09B0A5;">
+              <h3 class="text-center">#09B0A5</h3>
           </div>
-          <div class="col-xs-6 col-sm-3 img-thumbnail">
-              <img src="holder.js/512x256?bg=27AE60&text=#27AE60" class="img-responsive" alt="#27AE60 palette image tile">
-              <h3 class="text-center">#27AE60</h3>
+          <div class="col-xs-6 col-sm-3" style="background: #60A9EA;">
+              <h3 class="text-center">#60A9EA</h3>
           </div>
-          <div class="col-xs-6 col-sm-3 img-thumbnail">
-              <img src="holder.js/512x256?bg=2980B9&text=#2980B9" class="img-responsive" alt="#2980B9 palette image tile">
-              <h3 class="text-center">#2980B9</h3>
+          <div class="col-xs-6 col-sm-3" style="background: #F9B500;">
+              <h3 class="text-center">#F9B500</h3>
           </div>
-          <div class="col-xs-6 col-sm-3 img-thumbnail">
-              <img src="holder.js/512x256?bg=2C3E50&text=#2C3E50" class="img-responsive" alt="#2C3E50 palette image tile">
-              <h3 class="text-center">#2C3E50</h3>
+          <div class="col-xs-6 col-sm-3" style="background: #ED6868;">
+              <h3 class="text-center">#ED6868</h3>
           </div>
-          <div class="col-xs-6 col-sm-3 img-thumbnail">
-              <img src="holder.js/512x256?bg=F39C12&text=#F39C12" class="img-responsive" alt="#F39C12 palette image tile">
-              <h3 class="text-center">#F39C12</h3>
+          <div class="col-xs-6 col-sm-3" style="background: #C0C0C0;">
+              <h3 class="text-center">#C0C0C0</h3>
           </div>
-          <div class="col-xs-6 col-sm-3 img-thumbnail">
-              <img src="holder.js/512x256?bg=D35400&text=#D35400" class="img-responsive" alt="#D35400 palette image tile">
-              <h3 class="text-center">#D35400</h3>
+          <div class="col-xs-6 col-sm-3" style="background: #303030;">
+              <h3 class="text-center">#303030</h3>
           </div>
-          <div class="col-xs-6 col-sm-3 img-thumbnail">
-              <img src="holder.js/512x256?bg=C0392B&text=#C0392B" class="img-responsive" alt="#C0392B palette image tile">
-              <h3 class="text-center">#C0392B</h3>
-          </div>
-          <div class="col-xs-6 col-sm-3 img-thumbnail">
-              <img src="holder.js/512x256?bg=BDC3C7&text=#BDC3C7" class="img-responsive" alt="#BDC3C7 palette image tile">
-              <h3 class="text-center">#BDC3C7</h3>
+          <div class="col-xs-6 col-sm-3" style="background: #64686D;">
+              <h3 class="text-center">#64686D</h3>
           </div>
       </div>
+
+      <div class="page-header">
+        <h2>Typography</h2>
+      </div>
+
+      <div class="row typography">
+        <div class="col-xs-12">
+          <h3>Source Sans Pro</h3>
+          <p>Source Sans Pro</p>
+        </div>
+      </div>
+
       <div class="page-header">
         <h2>Headings &amp; Body Text</h2>
       </div>
@@ -458,6 +460,101 @@
         <strong>Oh snap!</strong> Change a few things up and try submitting again.
       </div>
 
+      <div class="page-header">
+        <h2>Form</h2>
+      </div>
+
+      <form>
+         <fieldset>
+           <legend>Legend</legend>
+           <div class="form-group">
+             <label for="exampleInputEmail">Email address</label>
+             <input type="text" class="form-control" id="exampleInputEmail" placeholder="Enter email">
+           </div>
+           <div class="form-group">
+             <label for="exampleInputPassword">Password</label>
+             <input type="password" class="form-control" id="exampleInputPassword" placeholder="Password">
+           </div>
+           <div class="form-group">
+             <label for="exampleInputFile">File input</label>
+             <input type="file" class="form-control" id="exampleInputFile">
+             <p class="help-block">Example block-level help text here.</p>
+           </div>
+           <div class="form-group">
+            <select class="form-control">
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+            </select>
+           </div>
+           <div class="checkbox">
+             <label>
+               <input type="checkbox">Check me out</label>
+           </div>
+           <button type="submit" class="btn btn-default">Submit</button>
+         </fieldset>
+       </form>
+       <hr>
+       <form class="form-inline">
+         <input type="text" class="form-control" placeholder="Email" style="width: 200px;">
+         <input type="password" class="form-control" placeholder="Password" style="width: 200px;">
+         <div class="checkbox">
+           <label>
+             <input type="checkbox">Remember me</label>
+         </div>
+         <button type="submit" class="btn btn-default">Sign in</button>
+       </form>
+       <hr>
+       <form class="form-horizontal">
+         <div class="form-group">
+           <label for="inputEmail" class="col-lg-2 control-label">Email</label>
+           <div class="col-lg-10">
+             <input type="text" class="form-control" id="inputEmail" placeholder="Email">
+           </div>
+         </div>
+         <div class="form-group has-warning">
+           <label for="inputEmail" class="col-lg-2 control-label">Email</label>
+           <div class="col-lg-10">
+             <input type="text" class="form-control" id="inputEmail" placeholder="Email">
+           </div>
+         </div>
+         <div class="form-group has-error">
+           <label for="inputEmail" class="col-lg-2 control-label">Email</label>
+           <div class="col-lg-10">
+             <input type="text" class="form-control" id="inputEmail" placeholder="Email">
+           </div>
+         </div>
+         <div class="form-group has-success">
+           <label for="inputEmail" class="col-lg-2 control-label">Email</label>
+           <div class="col-lg-10">
+             <input type="text" class="form-control" id="inputEmail" placeholder="Email">
+           </div>
+         </div>
+         <div class="form-group">
+           <label for="inputPassword" class="col-lg-2 control-label">Password</label>
+           <div class="col-lg-10">
+             <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+             <div class="checkbox">
+               <label>
+                 <input type="checkbox">Remember me</label>
+             </div>
+           </div>
+         </div>
+       </form>
+
+      <form class="form-inline"> 
+        <div class="form-group"> 
+          <label class="sr-only" for="exampleInputAmount">Amount (in dollars)</label> 
+          <div class="input-group"> 
+            <div class="input-group-addon">RM</div> 
+            <input class="form-control" id="exampleInputAmount" placeholder="Amount"> 
+            <div class="input-group-addon">.00</div> 
+          </div> 
+        </div> 
+        <button type="submit" class="btn btn-primary">Transfer cash</button> 
+      </form>
 
       <div class="page-header">
         <h2>Progress bars</h2>
@@ -1061,7 +1158,7 @@
         <h2>Side Navigation with Icon</h2>
       </div>
 
-      <div style="position: relative; height: 150px; width: 100%;">
+      <div style="position: relative; height: 100px; width: 100%;">
         <div class="side-nav" style="position: absolute;">
           <!-- <button class="nav-toggle">Menu</button> -->
           <a class="nav-toggle"><i class="fa fa-bars" aria-hidden="true"></i></a>
@@ -1118,10 +1215,242 @@
 
 
       <div class="page-header">
+        <h2>Footer</h2>
+      </div>
+
+      <div class="footer" style="position: relative;">
+      </div>
+      
+      <div class="footer footer-primary" style="position: relative;">
+      </div>
+
+      <div class="footer footer-info" style="position: relative;">
+      </div>
+
+      <div class="footer footer-warning" style="position: relative;">
+      </div>
+
+      <div class="footer footer-danger" style="position: relative;">
+      </div>
+
+      <div class="footer footer-neutral" style="position: relative;">
+      </div>
+
+      <div class="page-header">
         <h2>Card</h2>
       </div>
 
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+          <div class="card">
+            <div class="card-header">
+              <h2 class="card-title">Card Title</h2>
+            </div>
+            <div class="card-body">
+              <div class="card-icon">
+                <i class="icon-withdraw"></i>
+              </div>
+              <div class="card-message">
+                <h4>You have no cards</h4>
+                <p>Let’s add a card and become rich together.</p>
+              </div>
+              <a class="btn btn-block">add new card</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+          <div class="card card-primary">
+            <div class="card-header">
+              <h2 class="card-title">Card Title</h2>
+            </div>
+            <div class="card-body">
+              <div class="card-icon">
+                <i class="icon-withdraw"></i>
+              </div>
+              <div class="card-message">
+                <h4>You have no cards</h4>
+                <p>Let’s add a card and become rich together.</p>
+              </div>
+              <a class="btn btn-primary btn-block">add new card</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+          <div class="card card-info">
+            <div class="card-header">
+              <h2 class="card-title">Card Title</h2>
+            </div>
+            <div class="card-body">
+              <div class="card-icon">
+                <i class="icon-withdraw"></i>
+              </div>
+              <div class="card-message">
+                <h4>You have no cards</h4>
+                <p>Let’s add a card and become rich together.</p>
+              </div>
+              <a class="btn btn-info btn-block">add new card</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+          <div class="card card-warning">
+            <div class="card-header">
+              <h2 class="card-title">Card Title</h2>
+            </div>
+            <div class="card-body">
+              <div class="card-icon">
+                <i class="icon-withdraw"></i>
+              </div>
+              <div class="card-message">
+                <h4>You have no cards</h4>
+                <p>Let’s add a card and become rich together.</p>
+              </div>
+              <a class="btn btn-warning btn-block">add new card</a>
+            </div>
+          </div>  
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+          <div class="card card-danger">
+            <div class="card-header">
+              <h2 class="card-title">Card Title</h2>
+            </div>
+            <div class="card-body">
+              <div class="card-icon">
+                <i class="icon-withdraw"></i>
+              </div>
+              <div class="card-message">
+                <h4>You have no cards</h4>
+                <p>Let’s add a card and become rich together.</p>
+              </div>
+              <a class="btn btn-danger btn-block">add new card</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+          <div class="card card-neutral">
+            <div class="card-header">
+              <h2 class="card-title">Card Title</h2>
+            </div>
+            <div class="card-body">
+              <div class="card-icon">
+                <i class="icon-withdraw"></i>
+              </div>
+              <div class="card-message">
+                <h4>You have no cards</h4>
+                <p>Let’s add a card and become rich together.</p>
+              </div>
+              <a class="btn btn-neutral btn-block">add new card</a>
+            </div>
+          </div>
+        </div>
+      </div>
 
+      <div class="page-header">
+        <h2>Multi-steps</h2>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <div class="multistep">
+            <ul class="steps">
+              <li class="is-active"></li>
+              <li></li>
+              <li></li>
+            </ul>
+            <div class="multistep-container">
+
+              <fieldset class="section is-active">
+                <div class="card card-neutral">
+                  <div class="card-header">
+                    <h2 class="card-title">Card Title</h2>
+                  </div>
+                  <div class="card-body">
+                    <div class="card-icon">
+                      <i class="icon-withdraw"></i>
+                    </div>
+                    <div class="card-message">
+                      <h4>You have no cards</h4>
+                      <p>Let’s add a card and become rich together.</p>
+                    </div>
+                    <a class="btn btn-neutral btn-block">add new card</a>
+                  </div>
+                </div>
+              </fieldset>
+
+              <fieldset class="section">
+                <div class="card card-neutral">
+                  <div class="card-header">
+                    <h2 class="card-title">Card Title</h2>
+                  </div>
+                  <div class="card-body">
+                    <div class="card-icon">
+                      <i class="icon-withdraw"></i>
+                    </div>
+                    <div class="card-message">
+                      <h4>You have no cards</h4>
+                      <p>Let’s add a card and become rich together.</p>
+                    </div>
+                    <a class="btn btn-neutral btn-block">add new card</a>
+                  </div>
+                </div>
+              </fieldset>
+
+              <fieldset class="section">
+                <div class="card card-neutral">
+                  <div class="card-header">
+                    <h2 class="card-title">Card Title</h2>
+                  </div>
+                  <div class="card-body">
+                    <div class="card-icon">
+                      <i class="icon-withdraw"></i>
+                    </div>
+                    <div class="card-message">
+                      <h4>You have no cards</h4>
+                      <p>Let’s add a card and become rich together.</p>
+                    </div>
+                    <a class="btn btn-neutral btn-block">add new card</a>
+                  </div>
+                </div>
+              </fieldset>
+
+              <fieldset class="section">
+                <h3>Account Created!</h3>
+                <p>Your account has now been created.</p>
+                <div class="btn">Reset Form</div>
+              </fieldset>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="page-header">
+        <h2>Modal</h2>
+      </div>
+
+      <!-- Button trigger modal -->
+      <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+        Launch demo modal
+      </button>
+
+      <!-- Modal -->
+      <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+            </div>
+            <div class="modal-body">
+              ...
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
 
     </div>
     <script src="https://use.fontawesome.com/b500488199.js"></script>
@@ -1162,6 +1491,33 @@ $(function() {
     $('.sideNav').removeClass('open');
   });
 });
+</script>
+
+
+
+<script type="text/javascript">
+  $(document).ready(function(){
+    $(".multistep-container .btn").click(function(){
+      var button = $(this);
+      var currentSection = button.parents(".section");
+      var currentSectionIndex = currentSection.index();
+      var headerSection = $('.steps li').eq(currentSectionIndex);
+      currentSection.removeClass("is-active").next().addClass("is-active");
+      headerSection.addClass("is-complete");
+      headerSection.removeClass("is-active").next().addClass("is-active");
+
+      $(".multistep-container").submit(function(e) {
+        e.preventDefault();
+      });
+
+      if(currentSectionIndex === 3){
+        $(document).find(".steps li").removeClass("is-complete");
+        $(document).find(".multistep-container .section").first().addClass("is-active");
+        $(document).find(".steps li").first().addClass("is-active");
+      }
+    });
+  });
+
 </script>
   </body>
 </html>

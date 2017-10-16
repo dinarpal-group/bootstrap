@@ -8,197 +8,86 @@
     <title>Dinarpal Styleguide</title>
 <!--     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->  
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/styleguide.css">
   </head>
   <body>
 
+  <div class="container">  
+  <div class="row">
+    <div class="col-sm-12">
+      <div class="multistep">
+        <ul class="steps">
+          <li class="is-active"></li>
+          <li></li>
+          <li></li>
+        </ul>
+        <div class="multistep-container">
 
-        
-        <div class="side-nav">
-          <!-- <button class="nav-toggle">Menu</button> -->
-          <a class="nav-toggle"><i class="fa fa-bars" aria-hidden="true"></i></a>
-          <nav class="sideNav">
-            <ul class="list-group navbar-list">
-              <li class="list-group-item navbar-profile">
-                <div class="row">
-                  <div class="col-xs-3 col-sm-3 col-md-3">
-                    <img class="img-circle center-block" src="image/muslim-man.svg" alt="avatar" width="50" height="auto">
-                  </div>
-                  <div class="col-xs-6 col-sm-6 col-md-6 profile-details">
-                    <span class="profile-name">
-                      Mohd Aizzat
-                    </span>
-                    <span class="profile-email">jakzaizzat@gmail.com <i class="fa fa-check-square" aria-hidden="true"></i></span>
-                  </div>
-                  <div class="col-xs-3 col-sm-3 col-md-3 profile-account-setting">
-                    <a ui-sref="ngstarter.index.accountsettings" ng-click="vm.toggleSideMenu()">
-                   <i class="fa fa-cogs" aria-hidden="true"></i>
-                 </a>
-                  </div>
+          <fieldset class="section is-active">
+            <div class="card card-neutral">
+              <div class="card-header">
+                <h2 class="card-title">Card Title</h2>
+              </div>
+              <div class="card-body">
+                <div class="card-icon">
+                  <i class="icon-withdraw"></i>
                 </div>
-              </li>
-              <!-- main menu begin -->
+                <div class="card-message">
+                  <h4>You have no cards</h4>
+                  <p>Let’s add a card and become rich together.</p>
+                </div>
+                <a class="btn btn-neutral btn-block">add new card</a>
+              </div>
+            </div>
+          </fieldset>
 
-              <li class="list-group-item">
-                <a ui-sref="ngstarter.index.home" ng-click="vm.toggleSideMenu()">
-                  <i class="fa fa-area-chart" aria-hidden="true"></i>My Portfolio</a>
-              </li>
+          <fieldset class="section">
+            <div class="card card-neutral">
+              <div class="card-header">
+                <h2 class="card-title">Card Title</h2>
+              </div>
+              <div class="card-body">
+                <div class="card-icon">
+                  <i class="icon-withdraw"></i>
+                </div>
+                <div class="card-message">
+                  <h4>You have no cards</h4>
+                  <p>Let’s add a card and become rich together.</p>
+                </div>
+                <a class="btn btn-neutral btn-block">add new card</a>
+              </div>
+            </div>
+          </fieldset>
 
-              <li class="list-group-item">
-                <a ui-sref="ngstarter.index.home" ng-click="vm.toggleSideMenu()">
-                  <i class="fa fa-money" aria-hidden="true"></i>Buy / Sell
-                </a>
-              </li>
+          <fieldset class="section">
+            <div class="card card-neutral">
+              <div class="card-header">
+                <h2 class="card-title">Card Title</h2>
+              </div>
+              <div class="card-body">
+                <div class="card-icon">
+                  <i class="icon-withdraw"></i>
+                </div>
+                <div class="card-message">
+                  <h4>You have no cards</h4>
+                  <p>Let’s add a card and become rich together.</p>
+                </div>
+                <a class="btn btn-neutral btn-block">add new card</a>
+              </div>
+            </div>
+          </fieldset>
 
+          <fieldset class="section">
+            <h3>Account Created!</h3>
+            <p>Your account has now been created.</p>
+            <div class="btn">Reset Form</div>
+          </fieldset>
 
-              <li class="list-group-item navbar-signout"><a ng-click="signOut()"><i class="fa fa-sign-out" aria-hidden="true"></i>Sign Out</a></li>
-            </ul>
-          </nav>
-          <div class="navbar-account">
-            <div class="icon icon-primary">
-              <div class="icon-square"></div>
-              <i class="icon-withdraw" aria-hidden="true"></i>
-            </div>
-          </div>
-          <div class="navbar-logo logo-right">
-            <a href="#">
-             <img src="image/logo.png" width="100" height="auto" />
-           </a>
-          </div>
-        </div>
-
-        <div class="row" style="margin: 61px 0 0;">
-            <div class="heading heading-warning">
-              <h3>GOLD ACCOUNT</h3>
-              <h1>0.6 GRAM</h1>
-              <h3>RM 1200.30</h3>
-            </div>
-        </div>
-
-      <div class="transactions">
-        <a href="#">
-        <div class="transaction row">
-          <div class="col-xs-3">
-            <div class="icon">
-              <i class="icon-payment" aria-hidden="true"></i>
-            </div>
-          </div>
-          <div class="col-xs-5">
-            <div class="transaction-detail">
-              <p class="transaction-title">
-                PAYMENT
-              </p>
-              <p class="transaction-sender">
-                Gerbang Alaf Restaurants Sdn Bhd
-              </p>
-              <p class="transaction-timestamp">
-                4 hours ago
-              </p>
-            </div>
-          </div>
-          <div class="col-xs-4">
-            <div class="transaction-amount">
-              <p class="amount-expense">
-                - 0.1 GRAMS
-              </p>
-              <p class="amount-reference">
-                RM 18.23
-              </p>
-            </div>
-          </div>
-        </div>
-        </a>
-        <div class="transaction row">
-          <div class="col-xs-3">
-            <div class="icon">
-              <i class="icon-buy" aria-hidden="true"></i>
-            </div>
-          </div>
-          <div class="col-xs-5">
-            <div class="transaction-detail">
-              <p class="transaction-title">
-                BUY
-              </p>
-              <p class="transaction-sender">
-                At <a href="#">fiat funds account</a>
-              </p>
-              <p class="transaction-timestamp">
-                yesterday
-              </p>
-            </div>
-          </div>
-          <div class="col-xs-4">
-            <div class="transaction-amount">
-              <p class="amount-income">
-                + 3.8 GRAMS
-              </p>
-              <p class="amount-reference">
-                RM 722.00
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="transaction row">
-          <div class="col-xs-3">
-            <div class="icon">
-              <i class="icon-withdraw" aria-hidden="true"></i>
-            </div>
-          </div>
-          <div class="col-xs-5">
-            <div class="transaction-detail">
-              <p class="transaction-title">
-                withdraw
-              </p>
-              <p class="transaction-sender">
-                At <a href="#">fiat funds account</a>
-              </p>
-              <p class="transaction-timestamp">
-                October 3, 2017
-              </p>
-            </div>
-          </div>
-          <div class="col-xs-4">
-            <div class="transaction-amount">
-              <p class="amount-expense">
-                - 0.1 GRAMS
-              </p>
-              <p class="amount-reference">
-                RM 18.23
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="transaction row">
-          <div class="col-xs-3">
-            <div class="icon">
-              <i class="icon-transfer" aria-hidden="true"></i>
-            </div>
-          </div>
-          <div class="col-xs-5">
-            <div class="transaction-detail">
-              <p class="transaction-title">
-                transfer
-              </p>
-              <p class="transaction-sender">
-                To <a href="#">Syatilah</a>
-              </p>
-              <p class="transaction-timestamp">
-                September 27, 2017
-              </p>
-            </div>
-          </div>
-          <div class="col-xs-4">
-            <div class="transaction-amount">
-              <p class="amount-expense">
-                - 0.1 GRAMS
-              </p>
-              <p class="amount-reference">
-                RM 18.23
-              </p>
-            </div>
-          </div>
         </div>
       </div>
-
+    </div>
+  </div>
+</div>
 
     <script src="https://use.fontawesome.com/b500488199.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
@@ -239,5 +128,32 @@ $(function() {
   });
 });
 </script>
+
+
+<script type="text/javascript">
+  $(document).ready(function(){
+    $(".multistep-container .btn").click(function(){
+      var button = $(this);
+      var currentSection = button.parents(".section");
+      var currentSectionIndex = currentSection.index();
+      var headerSection = $('.steps li').eq(currentSectionIndex);
+      currentSection.removeClass("is-active").next().addClass("is-active");
+      headerSection.addClass("is-complete");
+      headerSection.removeClass("is-active").next().addClass("is-active");
+
+      $(".multistep-container").submit(function(e) {
+        e.preventDefault();
+      });
+
+      if(currentSectionIndex === 3){
+        $(document).find(".steps li").removeClass("is-complete");
+        $(document).find(".multistep-container .section").first().addClass("is-active");
+        $(document).find(".steps li").first().addClass("is-active");
+      }
+    });
+  });
+
+</script>
+
   </body>
 </html>

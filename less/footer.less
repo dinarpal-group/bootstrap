@@ -1,0 +1,39 @@
+//
+// Footer
+// --------------------------------------------------
+
+// Base styles
+// -------------------------------------------------
+
+.footer {
+  height: 13px;
+  width: 100%;
+  background-color: @gray-base;
+  margin-top: 10px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+
+// Alternate Heading
+// --------------------------------------------------
+
+.footer-primary {
+  .footer-variant(@brand-primary;);
+}
+// Info appears as blue-green
+.footer-info {
+  .footer-variant(@brand-info;);
+}
+// Warning appears as orange
+.footer-warning {
+  .footer-variant(@brand-warning;);
+}
+// Danger and error appear as red
+.footer-danger {
+  .footer-variant(@brand-danger;);
+}
+// Heading with Gray Color
+.footer-neutral {
+  .footer-variant(@brand-neutral;);
+}

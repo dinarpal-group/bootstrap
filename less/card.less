@@ -1,0 +1,56 @@
+//
+// Card
+// --------------------------------------------------
+
+// Base styles
+// -------------------------------------------------
+
+.card {
+  background: #ffffff;
+  padding: 3rem 5rem;
+  margin: 20px 0;
+  border: 1px solid #f3f3f2;
+  border-top: 8px solid @gray-base;
+  border-radius: 8px;
+  box-shadow: 0 1px 5px 0 fade(@gray-base, 29%);
+  .card-header{
+    text-align: center;
+  }
+  .card-icon{
+    font-size: 10rem;
+    text-align: center;
+  }
+  .card-message{
+    text-align: center;
+    p{
+      color: @gray;
+    }
+  }
+  .btn-block{
+    margin-top: 6rem;
+  }
+}
+
+// Alternate Card
+// --------------------------------------------------
+
+.card-primary {
+  .card-variant(@brand-primary;);
+}
+// Info appears as blue-green
+.card-info {
+  .card-variant(@brand-info;);
+}
+// Warning appears as orange
+.card-warning {
+  .card-variant(@brand-warning;);
+}
+// Danger and error appear as red
+.card-danger {
+  .card-variant(@brand-danger;);
+}
+
+// Heading with Gray Color
+.card-neutral {
+  .card-variant(@brand-neutral;);
+}
