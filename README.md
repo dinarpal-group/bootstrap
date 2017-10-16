@@ -12,6 +12,8 @@ Bootstrap is a sleek, intuitive, and powerful front-end framework for faster and
 
 To get started, check out <http://getbootstrap.com>!
 
+## Demo
+Demo of the style guide available here [Dinarpal Styleguide](https://dinarpal.netlify.com/)	
 
 ## Table of contents
 
