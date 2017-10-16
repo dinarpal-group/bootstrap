@@ -14,77 +14,102 @@
 
   <div class="container">  
   <div class="row">
-    <div class="col-sm-12">
-      <div class="multistep">
-        <ul class="steps">
-          <li class="is-active"></li>
-          <li></li>
-          <li></li>
-        </ul>
-        <div class="multistep-container">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 
-          <fieldset class="section is-active">
-            <div class="card card-neutral">
-              <div class="card-header">
-                <h2 class="card-title">Card Title</h2>
-              </div>
-              <div class="card-body">
-                <div class="card-icon">
-                  <i class="icon-withdraw"></i>
+        <div class="receipt receipt-info">
+          <a href="#" class="receipt-close">
+            <i class="fa fa-times" aria-hidden="true"></i>
+            <span>close</span>
+          </a>
+          <div class="receipt-logo">
+            <img src="image/logo.png">
+          </div>
+          <div class="receipt-container zigzag">
+            <h3 class="receipt-title">BUY GOLD</h3>
+            <p class="receipt-timestamp">October 9, 2017 06:45</p>
+            <div class="receipt-location">
+              <div class="row">
+                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                  <div class="location-left">
+                    <p>from</p>
+                    <span class="location-from">fiat account balance</span>
+                  </div>
                 </div>
-                <div class="card-message">
-                  <h4>You have no cards</h4>
-                  <p>Let’s add a card and become rich together.</p>
+                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                  <div class="location-right">
+                    <p>to</p>
+                    <span class="location-to">gold account</span>
+                  </div>
                 </div>
-                <a class="btn btn-neutral btn-block">add new card</a>
               </div>
             </div>
-          </fieldset>
+            <div class="receipt-body">
+              <h3>Invoice Summary</h3>
+                <table class="table">
+                    <thead>
+                      <tr>
+                        <th style="width: 60%">Description</th>
+                        <th style="width: 40%">Amount</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr class="receipt-item">
+                        <td>16.7 GRAM GOLD</td>
+                        <td>RM 3006.00</td>
+                      </tr>
+                      <tr class="gold-rate">
+                        <td>Exchange rate per gram</td>
+                        <td>RM 180.00</td>
+                      </tr>
+                      <tr class="item-gst">
+                        <td>GST 6% inclusive</td>
+                        <td>RM 170.15</td>
+                      </tr>
+                      <tr class="item-retail">
+                        <td>Retail Price</td>
+                        <td>RM 2835.85</td>
+                      </tr>
+                      <tr class="item-total">
+                        <td>Paid</td>
+                        <td>RM 3006.00</td>
+                      </tr>
+                    </tbody>
+                </table>
 
-          <fieldset class="section">
-            <div class="card card-neutral">
-              <div class="card-header">
-                <h2 class="card-title">Card Title</h2>
-              </div>
-              <div class="card-body">
-                <div class="card-icon">
-                  <i class="icon-withdraw"></i>
-                </div>
-                <div class="card-message">
-                  <h4>You have no cards</h4>
-                  <p>Let’s add a card and become rich together.</p>
-                </div>
-                <a class="btn btn-neutral btn-block">add new card</a>
-              </div>
+
+                <table class="table">
+                    <thead>
+                      <tr>
+                        <th style="width: 60%">Gold</th>
+                        <th style="width: 40%">16.7 GRAMS</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr class="item-gst">
+                        <td>GST 6% inclusive</td>
+                        <td>RM 170.15</td>
+                      </tr>
+                      <tr class="item-retail">
+                        <td>Fee Amount</td>
+                        <td>0.95 GRAMS</td>
+                      </tr>
+                      <tr class="item-total">
+                        <td>Amount Received</td>
+                        <td>15.7 GRAMS</td>
+                      </tr>
+                    </tbody>
+                </table>
+
             </div>
-          </fieldset>
+          </div>
+          <div class="receipt-footer">
+            <p>Amount you paid</p>
+            <span>RM 3000.00</span>
+          </div>
 
-          <fieldset class="section">
-            <div class="card card-neutral">
-              <div class="card-header">
-                <h2 class="card-title">Card Title</h2>
-              </div>
-              <div class="card-body">
-                <div class="card-icon">
-                  <i class="icon-withdraw"></i>
-                </div>
-                <div class="card-message">
-                  <h4>You have no cards</h4>
-                  <p>Let’s add a card and become rich together.</p>
-                </div>
-                <a class="btn btn-neutral btn-block">add new card</a>
-              </div>
-            </div>
-          </fieldset>
-
-          <fieldset class="section">
-            <h3>Account Created!</h3>
-            <p>Your account has now been created.</p>
-            <div class="btn">Reset Form</div>
-          </fieldset>
-
+          <img src="image/stamp.png" class="receipt-stamp">
         </div>
-      </div>
+
     </div>
   </div>
 </div>
@@ -129,31 +154,6 @@ $(function() {
 });
 </script>
 
-
-<script type="text/javascript">
-  $(document).ready(function(){
-    $(".multistep-container .btn").click(function(){
-      var button = $(this);
-      var currentSection = button.parents(".section");
-      var currentSectionIndex = currentSection.index();
-      var headerSection = $('.steps li').eq(currentSectionIndex);
-      currentSection.removeClass("is-active").next().addClass("is-active");
-      headerSection.addClass("is-complete");
-      headerSection.removeClass("is-active").next().addClass("is-active");
-
-      $(".multistep-container").submit(function(e) {
-        e.preventDefault();
-      });
-
-      if(currentSectionIndex === 3){
-        $(document).find(".steps li").removeClass("is-complete");
-        $(document).find(".multistep-container .section").first().addClass("is-active");
-        $(document).find(".steps li").first().addClass("is-active");
-      }
-    });
-  });
-
-</script>
 
   </body>
 </html>

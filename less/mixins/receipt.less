@@ -1,0 +1,19 @@
+// Heading variants
+//
+// Easily pump out default styles, as well as :hover, :focus, :active,
+// and disabled options for all buttons
+
+.receipt-variant(@color) {
+
+  .receipt-container::after{
+    background: linear-gradient( 45deg, transparent 33.333%, @color 33.333%, @color 66.667%, transparent 66.667% ), linear-gradient( -45deg, transparent 33.333%, @color 33.333%, @color 66.667%, transparent 66.667% );
+    background-size: 20px 40px;
+
+  }
+
+  .receipt-footer{
+  	background: @color;
+  }
+
+}
+

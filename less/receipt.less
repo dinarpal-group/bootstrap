@@ -1,0 +1,218 @@
+//
+// Receipt
+// --------------------------------------------------
+
+// Base styles
+// -------------------------------------------------
+
+.receipt {
+  background: rgba(216, 216, 216, 0.41);
+  height:auto;  
+  width: 100%;
+  padding: 20px 10px 0px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 101;
+  overflow: hidden;
+  .receipt-close{
+    font-weight: 500;
+    font-size: 1.5rem;
+    color: @gray-base;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    i{ font-size: 2rem;}
+    span{ margin: 0 0 0 5px;}
+    &:hover{
+      color: @brand-warning;
+    }
+  }
+  .receipt-logo{
+    img {
+      width: 50px;
+      height: auto;
+      display: block;
+      margin: 0 auto 20px;
+    }
+  }
+  .receipt-container{
+    background: #ffffff;
+    padding: 10px 10px 30px;
+    .receipt-title{
+      text-align: center;
+      font-weight: 700;
+      color: @gray-base;
+      font-size: 1.4rem;
+      margin: 10px 0 5px;
+    }
+    .receipt-timestamp{
+      text-align: center;
+      font-weight: 300;
+      color: @gray-base;
+      font-size: 1.1rem;
+    }
+    .receipt-location{
+      padding: 20px 0;
+      border-bottom: 1px solid rgba(100,104,109,0.18);
+      .location-left,.location-right{
+        text-transform: uppercase;
+        line-height: 1;
+        p{
+          font-weight: 700;
+          font-size: 1.2rem;
+          color: @gray;
+          margin: 0;
+        }
+        span{
+          font-weight: 700;
+          font-size: 1.1rem;
+          color: @gray-base;
+        }
+      }
+      .location-left { text-align: left;}
+      .location-right { text-align: right;}
+    }
+    .receipt-body{
+      h3 {
+        font-weight: 700;
+        font-size: 1.5rem;
+        color: @brand-primary;
+      }
+      table{
+        border-color: transparent;
+        th{
+          border-bottom: none;
+          font-weight: 300;
+          font-size: 1.3rem;
+          color: @gray;
+          &:nth-child(2){
+            text-align: right;
+          }
+        }
+        tr{
+          td{
+            &:nth-child(2){ text-align: right;}
+          }
+        }
+        .receipt-item{
+          /* 16.7 GRAM GOLD: */
+          font-weight: 700;
+          font-size: 1.4rem;
+          color: @gray-base;
+          td{
+            border-top-color: fade(@gray, 18%);
+          }
+          td:nth-child(2){
+            font-weight: 500;
+          }
+        }
+        .gold-rate{
+          /* Exchange rate per gr: */
+          font-weight: 500;
+          font-size: 1.2rem;
+          color: @gray-base;
+        }
+        .item-gst,
+        .item-retail{
+          font-weight: 100;
+          font-size: 1.2rem;
+          color: @gray-base;
+          td:nth-child(1){
+            text-align: right;
+          }
+        }
+        .item-total{
+          font-size: 1.4rem;/* Paid: */
+          font-weight: 600;
+          color: @gray-base;
+          td:nth-child(1){
+            text-align: right;
+          }
+        }
+      }
+    }
+  } 
+  .receipt-container::before{
+    background: linear-gradient( 45deg, transparent 33.333%, #FFF 33.333%, #FFF 66.667%, transparent 66.667% ), linear-gradient( -45deg, transparent 33.333%, #FFF 33.333%, #FFF 66.667%, transparent 66.667% );
+    background-size: 20px 40px;
+  }
+  .receipt-container::after{
+    background: linear-gradient( 45deg, transparent 33.333%, @gray 33.333%, @gray 66.667%, transparent 66.667% ), linear-gradient( -45deg, transparent 33.333%, @gray 33.333%, @gray 66.667%, transparent 66.667% );
+    background-size: 20px 40px;
+  }
+  .zigzag {
+    position: relative;
+    width: 100%;
+    height: auto;
+    //box-shadow: 0 5px 50px rgba(0, 0, 0, .3);
+  }
+
+  .zigzag:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -10px;
+    left: 0;
+    width: 100%;
+    height: 10px;
+  }
+  .zigzag:after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 10px;
+  }
+  .receipt-footer{
+    background: @gray;
+    text-align: center;
+    color: #fff;
+    padding: 30px 0;
+    p{
+      font-size: 1.2rem;
+    }
+    span{
+      font-weight: 700;
+      font-size: 2rem;
+      letter-spacing: 1px;
+    }
+  }
+  .receipt-stamp{
+    position: absolute;
+    right: 0;
+    width: 200px;
+    height: auto;
+    bottom: 27px;
+    opacity: .8;
+    transform: rotate(-20deg);
+  }
+}
+
+
+// Alternate Heading
+// --------------------------------------------------
+
+.receipt-primary {
+  .receipt-variant(@brand-primary;);
+}
+// Info appears as blue-green
+.receipt-info {
+  .receipt-variant(@brand-info;);
+}
+// Warning appears as orange
+.receipt-warning {
+  .receipt-variant(@brand-warning;);
+}
+// Danger and error appear as red
+.receipt-danger {
+  .receipt-variant(@brand-danger;);
+}
+
+// Heading with Gray Color
+.receipt-neutral {
+  .receipt-variant(@brand-neutral;);
+}
+
