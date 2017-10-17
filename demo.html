@@ -12,107 +12,186 @@
   </head>
   <body>
 
-  <div class="container">  
-  <div class="row">
-    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 
-        <div class="receipt receipt-info">
-          <a href="#" class="receipt-close">
-            <i class="fa fa-times" aria-hidden="true"></i>
-            <span>close</span>
-          </a>
-          <div class="receipt-logo">
-            <img src="image/logo.png">
-          </div>
-          <div class="receipt-container zigzag">
-            <h3 class="receipt-title">BUY GOLD</h3>
-            <p class="receipt-timestamp">October 9, 2017 06:45</p>
-            <div class="receipt-location">
+  <div class="container">  
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+
+          <div class="receipt receipt-warning">
+            
+            <div class="receipt-top">
               <div class="row">
-                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-                  <div class="location-left">
-                    <p>from</p>
-                    <span class="location-from">fiat account balance</span>
+                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 col-left-no-padding">
+                  <a href="#" class="receipt-close">
+                    <i class="fa fa-times" aria-hidden="true"></i>
+                    <span>close</span>
+                  </a>
+                </div>
+                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                  <div class="receipt-logo">
+                    <img src="image/logo.png">
                   </div>
                 </div>
-                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-                  <div class="location-right">
-                    <p>to</p>
-                    <span class="location-to">gold account</span>
-                  </div>
+                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 col-right-no-padding">
+                  <a href="#" class="receipt-print">
+                    <i class="fa fa-print" aria-hidden="true"></i>
+                    <span>print</span>
+                  </a>
                 </div>
               </div>
             </div>
-            <div class="receipt-body">
-              <h3>Invoice Summary</h3>
+
+            <div class="receipt-container zigzag">
+              <h3 class="receipt-title">PURCHASE RECEIPT</h3>
+              <p class="receipt-timestamp">October 9th, 2017 at 06:45 AM</p>
+              <p class="receipt-location">
+                Jalan Komersial, Melaka International Trade Centre 75450 Melaka, Malaysia
+              </p>
+              <div class="receipt-body">
+
+                <div class="receipt-from">
+                  <div class="row">
+                    <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                      <div class="icon icon-info">
+                        <i class="fa fa-money" aria-hidden="true"></i>
+                      </div>
+                    </div>
+                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                      <div class="receipt-from-details">
+                        <p>paid from</p>
+                        <span>presented at counter</span>
+                        <p class="detail-location">MELAKA MITC</p>
+                      </div>
+                    </div>
+                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 col-left-no-padding">
+                      <div class="receipt-from-amount">
+                        <p>RM 1031.08</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
                 <table class="table">
                     <thead>
                       <tr>
-                        <th style="width: 60%">Description</th>
-                        <th style="width: 40%">Amount</th>
+                        <th style="width: 50%">Description</th>
+                        <th style="width: 10%">Qty</th>
+                        <th style="width: 40%">Amount/Price</th>
                       </tr>
                     </thead>
                     <tbody>
+
                       <tr class="receipt-item">
-                        <td>16.7 GRAM GOLD</td>
-                        <td>RM 3006.00</td>
+                        <td class="receipt-item-details">
+                          <p class="item-name">1 GRAM GOLD BAR</p>
+                          <p class="item-description">DINARPAL HARI RAYA .999 PURITy</p>
+                          <p class="item-serial">910-XAU-421-99999</p>
+                        </td>
+                        <td class="item-quantity">4</td>
+                        <td class="receipt-item-amount">
+                          <p class="item-amount">
+                            RM 3006.00
+                          </p>
+                          <p class="item-rate">
+                            1 @ RM 176.42
+                          </p>
+                        </td>
                       </tr>
-                      <tr class="gold-rate">
-                        <td>Exchange rate per gram</td>
-                        <td>RM 180.00</td>
+
+                      <tr class="receipt-item">
+                        <td class="receipt-item-details">
+                          <p class="item-name">1 GRAM SILVER COIN</p>
+                          <p class="item-description">KETUPAT MOTIF .999 PURITY</p>
+                          <p class="item-serial">910-XAU-421-99999</p>
+                        </td>
+                        <td class="item-quantity">38</td>
+                        <td class="receipt-item-amount">
+                          <p class="item-amount">
+                            RM 410.88
+                          </p>
+                          <p class="item-rate">
+                            1 @ RM 17.90
+                          </p>
+                        </td>
                       </tr>
-                      <tr class="item-gst">
-                        <td>GST 6% inclusive</td>
-                        <td>RM 170.15</td>
+
+                      <tr class="receipt-subtotal">
+                        <td>subtotal</td>
+                        <td></td>
+                        <td>RM 1420.42</td>
                       </tr>
-                      <tr class="item-retail">
-                        <td>Retail Price</td>
-                        <td>RM 2835.85</td>
+
+                      <tr class="receipt-item">
+                        <td class="receipt-item-details">
+                          <p class="item-name">SERVICE FEE</p>
+                          <p class="item-description">10% OF SALE VALUE</p>
+                        </td>
+                        <td></td>
+                        <td class="receipt-item-amount">
+                          <p class="item-amount">
+                            (RM 410.88)
+                          </p>
+                        </td>
                       </tr>
-                      <tr class="item-total">
-                        <td>Paid</td>
-                        <td>RM 3006.00</td>
+
+                      <tr class="receipt-gst">
+                        <td>All prices inclusive of 6% GST</td>
+                        <td></td>
+                        <td>
+                          <span class="gst-amount">RM 42.20</span>
+                        </td>
                       </tr>
+
                     </tbody>
                 </table>
 
+                <div class="receipt-from">
+                  <div class="row">
+                    <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                      <div class="icon icon-primary">
+                        <i class="fa fa-money" aria-hidden="true"></i>
+                      </div>
+                    </div>
+                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                      <div class="receipt-from-details">
+                        <p>SENT/DEPOSITED TO</p>
+                        <span>MY VAULT</span>
+                        <p class="detail-location">MELAKA MITC</p>
+                      </div>
+                    </div>
+                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 col-left-no-padding">
+                      <div class="receipt-from-amount">
+                        <p>42 ITEMS</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
 
-                <table class="table">
-                    <thead>
-                      <tr>
-                        <th style="width: 60%">Gold</th>
-                        <th style="width: 40%">16.7 GRAMS</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr class="item-gst">
-                        <td>GST 6% inclusive</td>
-                        <td>RM 170.15</td>
-                      </tr>
-                      <tr class="item-retail">
-                        <td>Fee Amount</td>
-                        <td>0.95 GRAMS</td>
-                      </tr>
-                      <tr class="item-total">
-                        <td>Amount Received</td>
-                        <td>15.7 GRAMS</td>
-                      </tr>
-                    </tbody>
-                </table>
+                <div class="receipt-identity">
+                  <div class="row">
+                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                      <img src="image/qr-code.jpg" class="receipt-qr">
+                    </div>
+                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                      <img src="image/stamp1.png" class="receipt-stamp">
+                    </div>
+                  </div>
+                  <p>Transaction Identifier</p>
+                  <span>c7a47966-b27c-11e7-abc4-cec278b6b50a</span>
+                </div>
 
+              </div>
             </div>
-          </div>
-          <div class="receipt-footer">
-            <p>Amount you paid</p>
-            <span>RM 3000.00</span>
+            <div class="receipt-footer">
+              <p>You paid</p>
+              <span>RM 3000.00</span>
+            </div>
+
           </div>
 
-          <img src="image/stamp.png" class="receipt-stamp">
-        </div>
-
+      </div>
     </div>
-  </div>
-</div>
+  </div>  
 
     <script src="https://use.fontawesome.com/b500488199.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
