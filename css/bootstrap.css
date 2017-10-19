@@ -6080,7 +6080,7 @@ button.close {
 }
 .accounts .account .account-value span {
   font-weight: 600;
-  font-size: 25px;
+  font-size: 20px;
   color: #64686d;
 }
 .alert-success {
@@ -6613,11 +6613,16 @@ nav.open {
   color: rgba(100, 104, 109, 0.5);
   font-weight: 500;
   margin: 3px 0 0;
+  font-size: 1rem;
 }
 .receipt .receipt-container .receipt-body .receipt-from .receipt-from-amount p {
   font-size: 1.7rem;
   text-align: right;
   margin: 0;
+}
+.receipt .receipt-container .receipt-body .receipt-from .receipt-from-amount .receipt-from-amount-ref {
+  font-size: 1.1rem;
+  color: rgba(100, 104, 109, 0.5);
 }
 .receipt .receipt-container .receipt-body table {
   border-color: transparent;
